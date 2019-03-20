@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>painty painty poo</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>    
+<body> 
+    <div class="buttons">
+        <input type="color" class="color" id="color" value="#0088ff">
+        <input type="range" id="size" min="1" max="40" value=15>
+        <button class="type" id="crayon" >
+        <img src="flaticon/png/001-crayon.png" alt="Crayon icon">
+        </button>
+        <button class="type" id="line">
+            <img src="flaticon/png/005-substract.png" alt="Line icon">
+        </button>
+        <button class="type" id ="rectangle" >
+            <img src="flaticon/png/002-rectangle.png" alt="Rectangle icon">
+        </button>
+        <button class="type" id="cercle">
+            <img src="flaticon/png/003-oval.png" alt="Circle icon">
+        </button>
+        <button id="full">
+            <img src="flaticon/png/004-paint.png" alt="Paint bucket icon">
+        </button>
+        <button id="clear" class="btn btn-light">Clear</button>
+        <button id="save" class="btn btn-light">Save</button>
+    </div>
+    <canvas class="canvas" id="canvas" width="400" height="250">Your browser does not support HTML5's canvas!</canvas>
+    <script src="paint.js"></script> 
+</body>
+</html>
